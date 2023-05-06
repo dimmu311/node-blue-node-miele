@@ -41,17 +41,38 @@
         },
         inputs:3,
         inputInfo: [
-	    {
+	        {
+                label: "getActions",
                 types: ["struct"]
             },
             {
+                label: "setValue",
                 types: ["struct"]
             },
-	    {
+	        {
+                label: "getEvents",
                 types: ["bool"]
             },
         ],
-        outputs:3,
+        outputs:4,
+        outputInfo: [
+	        {
+                label: "processDevices",
+                types: ["struct"]
+            },
+            {
+                label: "getActions",
+                types: ["struct"]
+            },
+            {
+                label: "setValue",
+                types: ["bool"]
+            },
+	        {
+                label: "getEvents",
+                types: ["struct"]
+            },
+        ],
         icon: "miele.png",
         label: function() {
             if(this.name) return this.name;

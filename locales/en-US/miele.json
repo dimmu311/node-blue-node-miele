@@ -11,6 +11,13 @@
     },
     "tip": "Tip: Contact Miele to get your client ID and client secret.",
     "paletteHelp": "<p>Get events from Miele devices.</p>",
-    "help": "<p>This connects to the Miele API server and polls it for events from Miele devices.</p><p>In order to use this node, you need to get a client ID and client secret from Miele. Please make sure you pair your devices to the Miele mobile app first, otherwise they won't be visible.</p><p>Thanks to oklona (<a href=\"https://github.com/oklona\">https://github.com/oklona</a>) for his PHP implementation of the API.</p>"
+    "help": "<p>This connects to the Miele API server and polls it for events from Miele devices.</p><p>In order to use this node, you need to get a client ID and client secret from Miele. Please make sure you pair your devices to the Miele mobile app first, otherwise they won't be visible.</p><p>Thanks to oklona (<a href=\"https://github.com/oklona\">https://github.com/oklona</a>) for his PHP implementation of the API.</p>",
+    "input1Description": "use this input to get all possible actions of your device. set a struct like this: {\"device}\":\"<yourDeviceId>\"} ",
+    "input2Description": "use this input to set a new value to your device. set a struct like this: {\"action\":\"light\", \"state\":1, \"device\":\"<yourDeviceId>\"} you can get the possible action and state values from the response of a getActions call",
+    "input3Description": "for now this not works",
+    "output1Description": "you receive the actual state of your devices",
+    "output2Description": "you receive the result of a getActions() call here.",
+    "output3Description": "you receive the result of a setValue() call. this will be false if setValue() fails.",
+    "output4Description": "for now this not works"
   }
 }
